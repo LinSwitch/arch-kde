@@ -11,7 +11,7 @@ count=${#updates[@]}
 
 # --- выводим только если есть ---
 if (( count > 0 )); then
-    notify-send -u critical -i system-software-update \
+    notify-send -i system-software-update \
                 "Arch 🚀" \
                 "$count новых обновлений доступно
                 ${updates[*]:0:3}$( ((count>3)) && echo " …и ещё $((count-3))" )"
